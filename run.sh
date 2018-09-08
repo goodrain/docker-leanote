@@ -7,8 +7,3 @@ if [ ! -f "/data/db/do_not_delete" ]; then
 	echo "do not delete this file" >> /data/db/do_not_delete
 	chmod 400 /data/db/do_not_delete
 fi
-
-cp -n -r /root/leanote /data/
-
-echo `date "+%Y-%m-%d %H:%M:%S"`' >>>>>> start leanote service'
-/data/leanote/bin/run.sh
