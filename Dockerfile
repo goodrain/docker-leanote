@@ -14,4 +14,7 @@ RUN set -ex; \
 	ln -snf /usr/share/zoneinfo/$TZ /etc/localtime ;\
 	echo $TZ > /etc/timezone
 	
+VOLUME /data/db /data/configdb
+EXPOSE 27017
+	
 CMD /bin/bash /root/run.sh
