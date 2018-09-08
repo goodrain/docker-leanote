@@ -14,6 +14,4 @@ RUN set -ex; \
 	ln -snf /usr/share/zoneinfo/$TZ /etc/localtime ;\
 	echo $TZ > /etc/timezone
 	
-EXPOSE 9000
-# CMD ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && /bin/bash /root/run.sh
 CMD /bin/bash /root/run.sh
